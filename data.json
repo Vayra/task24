@@ -6,6 +6,7 @@
   "email": "kenneth.ngo@no.experis.com",
   "residence": "Oslo",
   "nationality": "Norway",
+  "profilePicture": "https://image.flaticon.com/icons/svg/145/145848.svg",
   "qualifications": [
     {
       "name": "UiO",
@@ -53,6 +54,28 @@
     {
       "name": "Github",
       "url": "https://github.com/Vayra/task24"
+    }
+  ],
+  "codeInfo":[
+    {
+      "language" : "PHP",
+      "skillLevel": 0
+    },
+    {
+      "language" : "Ruby",
+      "skillLevel": 25
+    },
+    {
+      "language" : "JavaScript",
+      "skillLevel": 50
+    },
+    {
+      "language" : "java",
+      "skillLevel": 75
+    },
+    {
+      "language" : "Python",
+      "skillLevel": 100
     }
   ]
 }
