@@ -9,6 +9,7 @@ let rawData = fs.readFileSync("data.json");
 const data = JSON.parse(rawData);
 
 // Handlebars stuff
+/*
 $(function(){
     let experienceTemplate = handlebars.compile($("#experience-template").html());
     let experienceContext = {
@@ -17,6 +18,7 @@ $(function(){
     let experienceCompiled = experienceTemplate(experienceContext);
     $(document.body).append(experienceCompiled);
 });
+*/
 
 app.get("/data", (req, res) => res.send(data));
 
