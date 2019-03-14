@@ -41,6 +41,25 @@
         top: 100px;
         left: 100px;
       }
+      #codeInfo {
+        padding-top: 30px;
+      }
+      #relevantLinks {
+        padding-top: 30px;
+      }
+      .borderDiv {
+        padding: 30px;
+        border-bottom: 3px solid white;
+      }
+      .whiteHeader {
+        color: aliceblue;
+        text-align: center;
+      }
+      .link {
+        color: blue;
+        text-align: center;
+        font-size: 30px;
+      }
     </style>
   </head>
   <body>
@@ -72,18 +91,40 @@
                   src="https://image.flaticon.com/icons/svg/145/145848.svg"
                 />
                 <div>
-                  <h1 style="color:aliceblue;">Kenneth Ngo</h1>
-                  <h5 style="color:aliceblue;">Developer</h5>
+                  <h1 class="whiteHeader">Kenneth Ngo</h1>
+                  <h5 class="whiteHeader">Developer</h5>
                 </div>
               </div>
-              <div id="codingInfo"></div>
+              <div class="borderDiv"></div>
+
+              <div id="codeInfo">
+                <div id="codeSkill">
+                  <h3 class="whiteHeader">Java</h3>
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 75%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="borderDiv"></div>
+
+              <div id="relevantLinks">
+                <h3 class="whiteHeader">Relevant links:</h3>
+                <a class="link" href="https://github.com/Vayra/task24"
+                  >Github
+                </a>
+              </div>
             </div>
             <!-- Template 1  -->
           </div>
         </div>
       </div>
-      <!-- Force next columns to break to new line 
-        <div class="w-100"></div>-->
     </div>
   </body>
 </html>
