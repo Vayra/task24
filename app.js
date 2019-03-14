@@ -36,20 +36,26 @@ let progressContext = {
     code: data.codeInfo
 }
 
-let contexts = [experienceContext, contactContext, educationContext, progressContext];
+let linksContext = {
+    links: data.relevantLinks
+}
+
+let contexts = [experienceContext, contactContext, educationContext, progressContext, linksContext];
 
 // Filenames
 let inFiles = [
     'templates/experience-template.hbs',
     'templates/contactInfo-template.hbs',
     'templates/education-template.hbs',
-    'templates/progress-template.hbs'
+    'templates/progress-template.hbs',
+    'templates/links-template.hbs'
 ]
 let outFiles = [
     'html/experience-template.html',
     'html/contactInfo-template.html',
     'html/education-template.html',
-    'html/progress-template.html'
+    'html/progress-template.html',
+    'html/links-template.html'
 ]
 
 // Loop through the templates and create html
