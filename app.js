@@ -25,30 +25,44 @@ let experienceContext = {
 let contactContext = {
     name: data.name,
     title: data.title,
-    born: data.born,
-    phone: data.phone,
-    email: data.email,
-    residence: data.residence,
-    nationality: data.nationality
+    profilePicture: data.profilePicture
 };
 
 let educationContext = {
     education: data.qualifications
 }
 
+let progressContext = {
+    code: data.codeInfo
+}
+
+let contexts = [experienceContext, contactContext, educationContext, progressContext];
+
 // Filenames
-let inFile = 'templates/experience-template.hbs'
-let outFile = 'html/experience-template.html'
+let inFiles = [
+    'templates/experience-template.hbs',
+    'templates/contactInfo-template.hbs',
+    'templates/education-template.hbs',
+    'templates/progress-template.hbs'
+]
+let outFiles = [
+    'html/experience-template.html',
+    'html/contactInfo-template.html',
+    'html/education-template.html',
+    'html/progress-template.html'
+]
 
-let source = fs.readFileSync(inFile, 'utf8')
-
-let experienceTemplate = handlebars.compile(source) 
-
-
-let experienceCompiled = experienceTemplate(experienceContext);
-fs.writeFileSync(outFile, experienceCompiled)
-console.log(experienceCompiled);
-
+// Loop through the templates and create html
+for (let i = 0; i < inFiles.length; i++){
+    let inFile = inFiles[i];
+    let outFile = outFiles[i];
+    let context = contexts[i];
+    let source = fs.readFileSync(inFile, 'utf8');
+    let template = handlebars.compile(source);
+    let compiled = template(context);
+    fs.writeFileSync(outFile, compiled);
+    //console.log(compiled);
+}
 
 app.get("/data", (req, res) => res.send(data));
 
