@@ -4,7 +4,7 @@
   "description": "task 24, cv website",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Vayra/task24#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "handlebars": "^4.1.0",
+    "nodemon": "^1.18.10"
   }
 }
