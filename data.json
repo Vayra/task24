@@ -1,0 +1,58 @@
+{
+  "name": "Kenneth",
+  "title": "Fullstack Java utvikler",
+  "born": "07.04.1994",
+  "phone": "+47 45801855",
+  "email": "kenneth.ngo@no.experis.com",
+  "residence": "Oslo",
+  "nationality": "Norway",
+  "qualifications": [
+    {
+      "name": "UiO",
+      "dateStarted": "08.16",
+      "dateEnded": "06.19",
+      "description": "asda"
+    },
+    {
+      "name": "UiO",
+      "dateStarted": "08.16",
+      "dateEnded": "06.19",
+      "description": "asdas"
+    },
+    {
+      "name": "UiO",
+      "dateStarted": "08.16",
+      "dateEnded": "06.19",
+      "description": "asdas"
+    }
+  ],
+  "workExperience": [
+    {
+      "name": "Experis",
+      "position": "Developer",
+      "dateStarted": "08.16",
+      "dateEnded": "06.19",
+      "description": "sadsda"
+    },
+    {
+      "name": "Experis",
+      "position": "Developer",
+      "dateStarted": "08.16",
+      "dateEnded": "06.19",
+      "description": "sadsda"
+    },
+    {
+      "name": "Experis",
+      "position": "Developer",
+      "dateStarted": "08.16",
+      "dateEnded": "06.19",
+      "description": "sadsda"
+    }
+  ],
+  "relevantLinks": [
+    {
+      "name": "Github",
+      "url": "https://github.com/Vayra/task24"
+    }
+  ]
+}
