@@ -18,6 +18,7 @@ const data = JSON.parse(rawData);
 app.use('/html', express.static('html'));
 // Handlebars stuff
 
+
 //Contexts:
 let experienceContext = {
     workExperience : data.workExperience
@@ -69,6 +70,8 @@ for (let i = 0; i < inFiles.length; i++){
     fs.writeFileSync(outFile, compiled);
     //console.log(compiled);
 }
+
+
 
 app.get("/data", (req, res) => res.send(data));
 

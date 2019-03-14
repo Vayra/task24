@@ -1,40 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+   <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>   
-        $(document).ready( function() {
-            $("#contactInfo-template").load("html/contactInfo-template.html")
-            $("#experience-template").load("html/experience-template.html");
-            $("#education-template").load("html/education-template.html");
-            $("#progress-template").load("html/progress-template.html")
-            console.log('hello')
-        });
-        </script>
-    <title>Hello, weird world!</title>
+
+   
+
+    <title>CV</title>
+
+    <style>
+      /*
+      body {
+        background-image: url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1920&w=1080");
+      }
+      */
+      .box {
+        width: 350px;
+        height: 100%;
+        position: fixed;
+        top: 50px;
+        bottom: 30px;
+      }
+      .black {
+        background: #222831;
+      }
+      #infoColumn {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        top: 100px;
+        left: 100px;
+      }
+      #codeInfo {
+        padding-top: 30px;
+      }
+      #relevantLinks {
+        padding-top: 30px;
+      }
+      .borderDiv {
+        padding: 30px;
+        border-bottom: 3px solid white;
+      }
+      .whiteHeader {
+        color: aliceblue;
+        text-align: center;
+      }
+      .link {
+        color: blue;
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <div>Contact Info:</div>
-    <div id='contactInfo-template'></div>
-    <div>Experience</div>
-    <div id='experience-template'>replace</div>
-    <div>Education</div>
-    <div id='education-template'></div>
-    <div>Code skills</div>
-    <div id='progress-template'></div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
-    
+    <div class="container">
+      <div class="row">
+        <div class="col-16 col-sm-2">
+          <div class="box black">
+            <!-- Template 1  -->
+            <div id="infoColumn" align="center">
+              <div id="basicInfo">
+                <img
+                  src="https://image.flaticon.com/icons/svg/145/145848.svg"
+                />
+                <div>
+                  <h1 class="whiteHeader">Kenneth Ngo</h1>
+                  <h5 class="whiteHeader">Developer</h5>
+                </div>
+              </div>
+              <div class="borderDiv"></div>
+
+              <div id="codeInfo">
+                <div id="codeSkill">
+                  <h3 class="whiteHeader">Java</h3>
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 75%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="borderDiv"></div>
+
+              <div id="relevantLinks">
+                <h3 class="whiteHeader">Relevant links:</h3>
+                <a class="link" href="https://github.com/Vayra/task24"
+                  >Github
+                </a>
+              </div>
+            </div>
+            <!-- Template 1  -->
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
