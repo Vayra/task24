@@ -33,7 +33,7 @@
       "position": "Developer",
       "dateStarted": "08.16",
       "dateEnded": "06.19",
-      "description": "sadsda"
+      "description": "Bacon ipsum dolor amet pancetta brisket rump ground round frankfurter beef ribs tail tri-tip chuck turkey chicken short ribs. Bacon cow flank, corned beef sirloin ball tip pig capicola porchetta ham hock shank biltong prosciutto ground round buffalo."
     },
     {
       "name": "Experis",
@@ -57,14 +57,6 @@
     }
   ],
   "codeInfo":[
-    {
-      "language" : "PHP",
-      "skillLevel": 0
-    },
-    {
-      "language" : "Ruby",
-      "skillLevel": 25
-    },
     {
       "language" : "JavaScript",
       "skillLevel": 50
