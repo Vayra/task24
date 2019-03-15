@@ -32,48 +32,8 @@
         $("#relevantLinks").load("html/links-template.html");
       });
     </script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <title>CV</title>
-    <style>
-      body {
-        background-image: url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1920&w=1080");
-      }
-
-      .box {
-        align-content: center;
-      }
-      .black {
-        background: #222831;
-      }
-      .white {
-        background: whitesmoke;
-      }
-      #infoColumn {
-        padding: 70px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      #codeInfo {
-        padding-top: 30px;
-      }
-      #relevantLinks {
-        padding-top: 30px;
-      }
-      .borderDiv {
-        padding: 30px;
-        border-bottom: 3px solid white;
-      }
-      .whiteHeader {
-        color: aliceblue;
-        text-align: center;
-      }
-      .link {
-        align-content: center;
-        color: blue;
-        text-align: center;
-        font-size: 20px;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -90,7 +50,12 @@
           </div>
         </div>
         <div class=".col-lg-">
-          <div class="box2 white"></div>
+          <div class="box2 white">
+            <div id="qualifications">
+              <h1>Qualifications</h1>
+              <div class="borderDiv"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

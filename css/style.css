@@ -1,0 +1,39 @@
+.box {
+  align-content: center;
+}
+.black {
+  background: #222831;
+}
+.white {
+  background: whitesmoke;
+}
+#infoColumn {
+  padding: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#codeInfo {
+  padding-top: 30px;
+}
+#relevantLinks {
+  padding-top: 30px;
+}
+#qualifications {
+  padding-right: 30px;
+}
+.borderDiv {
+  padding: 3vw;
+  border-bottom: 3px solid white;
+}
+.whiteHeader {
+  color: aliceblue;
+  text-align: center;
+  font-size: 4ch;
+}
+.link {
+  align-content: center;
+  color: blue;
+  text-align: center;
+  font-size: 10ch;
+}
