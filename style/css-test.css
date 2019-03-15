@@ -76,8 +76,17 @@ body {
   
 }
 .info {
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.link {
+  color: #383be6;
 }
 
 @media (min-width: 900px) {
@@ -98,15 +107,16 @@ body {
       position: absolute;
       left:calc(50px + (3*var(--column-and-gutter-unit) - var(--gutter-unit)));
   }  
-  .info {
-    font-size: 16px;
-  }
+
   .whiteHeader{
     font-size:20px;
   }
 
-  img {
+  .profile {
     width: 100px;
+  }
+  .info {
+    font-size: 14px;
   }
 }
 

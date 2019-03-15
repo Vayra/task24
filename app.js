@@ -10,6 +10,7 @@ const data = JSON.parse(rawData);
 
 app.use('/html', express.static('html'));
 app.use('/style', express.static('style'));
+app.use('/img', express.static('img'));
 // Handlebars stuff
 
 
