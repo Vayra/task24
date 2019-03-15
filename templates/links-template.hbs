@@ -1,7 +1,9 @@
 <div id="relevantLinks">
     <h3 class="whiteHeader">Relevant links:</h3>
     {{#each links}}
-    <a class="link" href="{{url}}">{{name}}
+    <a class="link" href="{{url}}">
+        <img src="img/{{name}}.svg" class='icon'>
+        {{name}}
     </a>
     {{/each}}
 </div>
