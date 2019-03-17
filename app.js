@@ -4,19 +4,12 @@ const fs = require("fs");
 const path = require("path");
 const app = express();
 const port = 8080;
-var jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-const { window } = new JSDOM();
-const { document } = new JSDOM("").window;
-global.document = document;
-
-var $ = (jQuery = require("jquery")(window));
 
 let rawData = fs.readFileSync("data.json");
 const data = JSON.parse(rawData);
 
 app.use("/html", express.static("html"));
-app.use("/css", express.static("css"));
+app.use("/style", express.static("style"));
 // Handlebars stuff
 
 //Contexts:
@@ -26,6 +19,8 @@ let experienceContext = {
 let contactContext = {
   name: data.name,
   title: data.title,
+  phone: data.phone,
+  email: data.email,
   profilePicture: data.profilePicture
 };
 
@@ -81,6 +76,10 @@ app.get("/data", (req, res) => res.send(data));
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
+});
+
+app.get("/cv", (req, res) => {
+  res.sendFile(path.join(__dirname + "/css-test.html"));
 });
 
 app.listen(process.env.PORT || 8080);
